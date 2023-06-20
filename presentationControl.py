@@ -77,11 +77,11 @@ def countFingers(image, hand_landmarks, handNo=0):
         
         
         if totalFingers >= 1:
-            if  finger_tip_x < height-250:
+            if  finger_tip_y < height/2:
                 print("scroll Up")
                 keyboard.press(Key.up)
 
-            if finger_tip_x > height-250:
+            if finger_tip_y > height/2:
                 print("Scroll Down")
                 keyboard.press(Key.down)
        
